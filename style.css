@@ -1,0 +1,57 @@
+/* body */
+body {
+    background: url(banner-bg.png) no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+/* Navigation section  */
+.pt-2 {
+    clip-path: polygon(20px 0px, 100% 0, calc(99% - 30px) 100%, 5% 100%);
+    margin-left: 75px;
+    margin-right: 110px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: orangered;
+}
+
+/* Search form section */
+form {
+    width: 40%;
+    margin: 0px 0px 0px 0px;
+}
+
+::placeholder {
+    font-size: large;
+}
+
+.spinner {
+    width: 130px;
+    height: 130px;
+    border:18px solid rgb(49, 47, 47);
+    border-top: 18px solid orangered;
+    border-bottom: 18px solid orangered;
+    border-radius: 50%;
+    animation: spinner 10s linear infinite;
+    margin: 50px  auto;
+    position: relative;
+    top: 10px;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
